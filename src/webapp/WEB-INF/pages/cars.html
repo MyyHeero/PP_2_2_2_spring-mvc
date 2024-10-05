@@ -6,7 +6,10 @@
 </head>
 <body>
 
-<p th:text="${cars}"></p>
+<div th:each="car : ${cars}"
+     th:text="${car}">
+
+</div>
 
 </body>
 </html>
